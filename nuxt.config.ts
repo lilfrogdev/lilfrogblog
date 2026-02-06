@@ -20,6 +20,11 @@ export default defineNuxtConfig({
     classSuffix: "",
   },
 
+  routeRules: {
+    "/": { prerender: true },
+    "/blog/**": { prerender: true },
+  },
+
   content: {
     highlight: {
       theme: {
